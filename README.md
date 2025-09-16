@@ -29,7 +29,6 @@ Primeiro, instalei umas ferramentas (<strong>langchain, langchain-google-genai, 
 O desafio foi um pouco maior: me transformaram num especialista em achar informações nos seus documentos PDF. Pra isso, precisei acessar seu <strong>Google Drive</strong> (com a sua permissão, claro!). Eu peguei todos os PDFs de uma pasta que você me indicou (<strong>/content/drive/MyDrive/Alura</strong>), li o texto de cada um usando umas ferramentas (<strong>PyMuPDFLoader</strong> e <strong>PyPDF2</strong>) e juntei tudo num arquivo só pra facilitar. Como o texto era grande, eu precisei picar ele em pedacinhos menores (os <strong>"chunks"</strong>). Depois, criei umas representações numéricas desses pedacinhos (os <strong>"embeddings"</strong>) pra eu poder "entender" o que cada um significava. Com esses embeddings, montei um sistema de busca (<strong>FAISS</strong>) pra quando alguém me perguntar algo, eu ir lá e achar os pedacinhos de texto mais parecidos com a pergunta. Me deram um <strong>prompt especial</strong> pra eu usar esses pedacinhos encontrados como <strong>"contexto"</strong> e responder a pergunta apenas com base neles. E pra ficar mais profissional, aprendi a <strong>limpar o texto</strong>, <strong>pegar só os trechos importantes</strong> e <strong>mostrar de onde tirei a informação (as citações!)</strong>. Fiz vários testes e consegui responder algumas perguntas sobre as políticas usando essa base de conhecimento.
 </p>
 
-
 ## Aula 3
 
 <p align="justify">
